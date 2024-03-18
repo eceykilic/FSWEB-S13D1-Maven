@@ -5,8 +5,8 @@ public class Main {
         System.out.println("Hello world!");
     }
 
-    public  static boolean shouldWakeUp(boolean isBarking, int hour){
-        if(isBarking && ((hour >= 0 && hour < 8) || (hour > 20 && hour <= 23))){
+    public  static boolean shouldWakeUp(boolean isBarking, int clock){
+        if(isBarking && ((clock >= 0 && clock < 8) || (clock > 20 && clock <= 23))){
             return true;
         }
 
